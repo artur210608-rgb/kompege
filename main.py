@@ -12,7 +12,7 @@ from fake_useragent import UserAgent
 from config import prob_id
 
 options = Options()
-
+"chrome_options.add_argument('--headless')"
 options.add_argument('--disable-blink-features=AutomationControlled')
 
 user_agents_filename = 'user_agents.pkl'
@@ -90,3 +90,4 @@ if random_user_agent not in user_agents:
 
 
 print('the end')
+
